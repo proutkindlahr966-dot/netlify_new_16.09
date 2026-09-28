@@ -155,7 +155,6 @@ const COUNTRY_DEFAULT: Record<string, AppLocale> = {
   TJ: 'ru',
   UZ: 'ru',
   TM: 'ru',
-  MN: 'ru',
   LV: 'ru',
   EE: 'ru',
   LT: 'ru',
@@ -174,6 +173,9 @@ const COUNTRY_DEFAULT: Record<string, AppLocale> = {
 
   // —— Tiếng Phần Lan ——
   FI: 'fi',
+
+  // —— Монгол хэл ——
+  MN: 'mn',
 }
 
 export function countryCodeToAppLocale(countryCode: string | undefined): AppLocale {
