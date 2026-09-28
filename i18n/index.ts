@@ -2,6 +2,7 @@ import type { AppLocale, AppStrings } from './schema'
 import { ar } from './locales/ar'
 import { cs } from './locales/cs'
 import { de } from './locales/de'
+import { el } from './locales/el'
 import { en } from './locales/en'
 import { es } from './locales/es'
 import { fi } from './locales/fi'
@@ -47,6 +48,7 @@ const MESSAGES: Record<AppLocale, AppStrings> = {
   nl,
   fi,
   mn,
+  el,
 }
 
 export function getStrings(locale: AppLocale): AppStrings {

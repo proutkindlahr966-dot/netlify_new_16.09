@@ -20,6 +20,7 @@ export const APP_LOCALES = [
   'nl',
   'fi',
   'mn',
+  'el',
 ] as const
 
 export type AppLocale = (typeof APP_LOCALES)[number]
@@ -47,6 +48,7 @@ export const LOCALE_BCP47: Record<AppLocale, string> = {
   nl: 'nl-NL',
   fi: 'fi-FI',
   mn: 'mn-MN',
+  el: 'el-GR',
 }
 
 export type AppStrings = {

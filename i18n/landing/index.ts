@@ -2,6 +2,7 @@ import type { AppLocale } from '../schema'
 import { arLanding } from './ar'
 import { csLanding } from './cs'
 import { deLanding } from './de'
+import { elLanding } from './el'
 import { enLanding } from './en'
 import { esLanding } from './es'
 import { fiLanding } from './fi'
@@ -44,6 +45,7 @@ const MESSAGES: Record<AppLocale, LandingStrings> = {
   nl: nlLanding,
   fi: fiLanding,
   mn: mnLanding,
+  el: elLanding,
 }
 
 export type { LandingStrings } from './types'

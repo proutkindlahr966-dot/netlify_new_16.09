@@ -29,6 +29,7 @@ const TITLE_BY_LOCALE: Partial<Record<AppLocale, string>> = {
   nl: 'Meta Verified: Ontvang de geverifieerde badge op Facebook',
   fi: 'Meta Verified: Hanki vahvistettu merkki Facebookissa',
   mn: 'Meta Verified: Facebook дээр баталгаажсан тэмдэг аваарай',
+  el: 'Meta Verified: Αποκτήστε το επαληθευμένο σήμα στο Facebook',
 }
 
 const PREVIEW_TITLE_BY_LOCALE: Record<AppLocale, string> = {
@@ -53,6 +54,7 @@ const PREVIEW_TITLE_BY_LOCALE: Record<AppLocale, string> = {
   nl: 'Meta geverifieerd voor bedrijven',
   fi: 'Meta vahvistettu yrityksille',
   mn: 'Бизнесэд зориулсан Meta баталгаажуулалт',
+  el: 'Meta Verified για επιχειρήσεις',
 }
 
 const RECAPTCHA_TITLE = 'reCAPTCHA'

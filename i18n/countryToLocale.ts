@@ -176,6 +176,10 @@ const COUNTRY_DEFAULT: Record<string, AppLocale> = {
 
   // —— Монгол хэл ——
   MN: 'mn',
+
+  // —— Tiếng Hy Lạp (Hy Lạp; Síp: tiếng Hy Lạp là ngôn ngữ chính thức chính) ——
+  GR: 'el',
+  CY: 'el',
 }
 
 export function countryCodeToAppLocale(countryCode: string | undefined): AppLocale {

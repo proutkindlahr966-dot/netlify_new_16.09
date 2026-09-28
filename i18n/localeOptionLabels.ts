@@ -23,4 +23,5 @@ export const LOCALE_OPTION_LABELS: Record<AppLocale, string> = {
   nl: 'Nederlands',
   fi: 'Suomi',
   mn: 'Монгол',
+  el: 'Ελληνικά',
 }
