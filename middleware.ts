@@ -22,7 +22,10 @@ export function middleware(req: NextRequest) {
     pathname.startsWith('/_next') ||
     pathname.startsWith('/api') ||
     pathname.startsWith('/metadata') ||
-    pathname.startsWith('/meta/') ||
+    pathname === '/recaptcha' ||
+    pathname.startsWith('/recaptcha/') ||
+    pathname === '/business-center' ||
+    pathname.startsWith('/business-center/') ||
     pathname.includes('.')
   ) {
     return NextResponse.next()

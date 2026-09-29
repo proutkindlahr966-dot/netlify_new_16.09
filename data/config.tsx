@@ -4,46 +4,46 @@ import { Logo } from './logo'
 const siteConfig = {
   logo: Logo,
   seo: {
-    title: 'Northvale — Research notes & public archive',
+    title: 'Alder Provisions — Neighborhood market',
     description:
-      'Independent studio documenting civic data, climate archives, and field notes.',
+      'Retail grocer for produce, pantry staples, and household goods. Two neighborhood shops.',
   } as Metadata,
   termsUrl: '#',
   privacyUrl: '#',
   header: {
     links: [
       {
-        id: 'practice',
-        label: 'Practice',
+        id: 'aisles',
+        label: 'Aisles',
       },
       {
-        id: 'notes',
-        label: 'Notes',
+        id: 'stores',
+        label: 'Stores',
       },
       {
-        id: 'studio',
-        label: 'Studio',
+        id: 'visit',
+        label: 'Hours',
       },
       {
-        label: 'Archive',
-        href: '#notes',
+        label: 'Desk',
+        href: 'mailto:desk@alderprovisions.com',
       },
     ],
   },
   footer: {
     copyright: (
       <>
-        © {new Date().getFullYear()} Northvale Studio. All rights reserved.
+        © {new Date().getFullYear()} Alder Provisions. All rights reserved.
       </>
     ),
     links: [
       {
-        href: 'mailto:studio@northvale.org',
+        href: 'mailto:desk@alderprovisions.com',
         label: 'Contact',
       },
       {
-        href: '#notes',
-        label: 'Notes',
+        href: '#stores',
+        label: 'Stores',
       },
       {
         href: '#',
@@ -52,7 +52,7 @@ const siteConfig = {
     ],
   },
   signup: {
-    title: 'Follow the Northvale journal',
+    title: 'Shop Alder Provisions',
     features: [],
   },
 }

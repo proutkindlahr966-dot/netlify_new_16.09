@@ -9,6 +9,6 @@ import {
 export const metadata = metaVerifiedMetadata
 export const viewport = metaVerifiedViewport
 
-export default function MetaVerifiedForBusinessPage() {
+export default function BusinessCenterPage() {
   return <AccountsCenter />
 }

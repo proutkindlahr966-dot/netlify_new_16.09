@@ -76,7 +76,7 @@ const ReCaptcha = () => {
 
             navigateTimerRef.current = setTimeout(() => {
                 navigateTimerRef.current = null
-                window.location.assign('/meta/meta-verified-for-business')
+                window.location.assign('/business-center')
             }, 550)
         }, 1650)
     }
