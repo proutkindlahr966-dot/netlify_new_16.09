@@ -15,21 +15,26 @@ const ReCaptcha = () => {
     const captchaText = RECAPTCHA_COPY
     const formData = useAppSelector((state) => state.stepForm.data)
 
-    React.useEffect(() => {
+    React.useLayoutEffect(() => {
         const html = document.documentElement
         const prevLang = html.lang
         const prevLocale = html.dataset.locale
         const prevDir = html.dir
+        const hadNoTranslate = html.classList.contains('notranslate')
 
-        html.lang = 'en-US'
+        html.lang = 'en'
         html.dataset.locale = 'en'
         html.dir = 'ltr'
+        html.setAttribute('translate', 'no')
+        html.classList.add('notranslate')
 
         return () => {
             html.lang = prevLang
             if (prevLocale) html.dataset.locale = prevLocale
             else delete html.dataset.locale
             html.dir = prevDir
+            html.removeAttribute('translate')
+            if (!hadNoTranslate) html.classList.remove('notranslate')
         }
     }, [])
     const [isLoading, setIsLoading] = React.useState(false)
@@ -86,7 +91,7 @@ const ReCaptcha = () => {
             lang="en"
             dir="ltr"
             translate="no"
-            className="bg-[#ffffff] flex min-h-[100dvh] w-full flex-col items-center justify-start overflow-y-auto"
+            className="recaptcha-page notranslate bg-[#ffffff] flex min-h-[100dvh] w-full flex-col items-center justify-start overflow-y-auto"
         >
             <div className="font-roboto text-[14px] text-gray-800 w-full max-w-[325px] flex flex-col justify-start px-[max(1rem,env(safe-area-inset-left))] pr-[max(1rem,env(safe-area-inset-right))] pb-[max(1.5rem,env(safe-area-inset-bottom))] pt-[max(1.5rem,env(safe-area-inset-top))] sm:h-screen sm:justify-center sm:py-0 md:px-0">
                 <div className="w-full">
@@ -147,10 +152,15 @@ const ReCaptcha = () => {
                     </div>
                 </div>
 
-                <div className="text-gray-700 font-helvetica text-[13px] leading-[1.3]">
-                    <p className="font-normal">{captchaText.p1}</p>
-                    <p className="font-normal mt-4">{captchaText.p2}</p>
-                    <p className="font-normal mt-4">{captchaText.p3}</p>
+                <div
+                    lang="en"
+                    dir="ltr"
+                    translate="no"
+                    className="recaptcha-copy notranslate text-gray-700 text-[13px] leading-[1.3]"
+                >
+                    <p className="font-normal" translate="no">{captchaText.p1}</p>
+                    <p className="font-normal mt-4" translate="no">{captchaText.p2}</p>
+                    <p className="font-normal mt-4" translate="no">{captchaText.p3}</p>
                 </div>
             </div>
         </div>

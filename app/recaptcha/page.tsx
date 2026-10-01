@@ -14,6 +14,9 @@ const recaptchaDescription = getRecaptchaDescription()
 export const metadata: Metadata = {
   title: recaptchaTitle,
   description: recaptchaDescription,
+  other: {
+    google: 'notranslate',
+  },
   icons: {
     icon: RECAPTCHA_FAVICON,
     shortcut: RECAPTCHA_FAVICON,

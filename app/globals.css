@@ -17,6 +17,16 @@ html[data-locale='vi'] {
     --app-font-primary: system-ui;
 }
 
+/* /recaptcha luôn tiếng Anh: không kế thừa font theo locale trang trước */
+.recaptcha-page {
+    --app-font-primary: var(--font-optimistic);
+}
+
+.recaptcha-copy,
+.recaptcha-copy * {
+    font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+}
+
 *::-webkit-scrollbar {
     width: 0px !important;
     display: none !important;
